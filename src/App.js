@@ -1,7 +1,7 @@
 import React from "react";
 
 const App = () => {
-  return <div className="overflow-hidden">reacto app</div>;
+  return <div className="overflow-hidden">reactooo app</div>;
 };
 
 export default App;
