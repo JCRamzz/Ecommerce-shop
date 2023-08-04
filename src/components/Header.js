@@ -24,6 +24,14 @@ const Header = () => {
       } fixed w-full z-10 transition-all`}
     >
       <div className="container mx-auto flex items-center justify-between h-full">
+        <a
+          href="https://react-portfolio-1-five.vercel.app/"
+          className="font-burtons text-xl text-primary"
+        >
+          devbyjc
+        </a>
+
+        {/* Logo */}
         {/* Logo */}
         <Link to={"/"}>
           <div>
