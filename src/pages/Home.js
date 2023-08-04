@@ -12,8 +12,6 @@ const Home = () => {
     return item.category === "electronics";
   });
 
-  console.log(filteredProducts);
-
   return (
     <div>
       <section className="py-16">
