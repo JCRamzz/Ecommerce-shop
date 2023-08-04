@@ -48,6 +48,7 @@ const CartItem = ({ item }) => {
            items-center h-full border
             text-primary font-medium"
             >
+              {/* minus icon */}
               <div
                 onClick={() => decreaseAmount(id)}
                 className="flex-1 h-full flex justify-center
