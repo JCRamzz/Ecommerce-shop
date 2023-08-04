@@ -1,3 +1,5 @@
+![Project Image](https://cdn-icons-png.flaticon.com/512/2991/2991473.png)
+
 # E-commerce-shop
 
 This is a simple e-commerce React app that allows users to browse and purchase products.
