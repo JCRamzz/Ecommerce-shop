@@ -8,6 +8,7 @@ import ProductProvider from "./contexts/ProductContext";
 import SidebarProvider from "./contexts/SidebarContext";
 // cart provider
 import CartProvider from "./contexts/CartContext";
+import "./fonts.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
