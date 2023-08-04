@@ -9,7 +9,7 @@ const Home = () => {
 
   // get only electronics category
   const filteredProducts = products.filter((item) => {
-    return item.category === "electronics";
+    return item.category === "men's clothing" || "women's clothing";
   });
 
   return (
