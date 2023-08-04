@@ -4,7 +4,8 @@ import { IoMdClose, IoMdRemove, IoMdAdd } from "react-icons/io";
 import { CartContext } from "../contexts/CartContext";
 
 const CartItem = ({ item }) => {
-  const { removeFromCart } = useContext(CartContext);
+  const { removeFromCart, increaseAmount, decreaseAmount } =
+    useContext(CartContext);
 
   // destructure item
   const { id, title, image, price, amount } = item;
@@ -48,6 +49,7 @@ const CartItem = ({ item }) => {
             text-primary font-medium"
             >
               <div
+                onClick={() => decreaseAmount(id)}
                 className="flex-1 h-full flex justify-center
               items-center cursor-pointer"
               >
@@ -62,6 +64,7 @@ const CartItem = ({ item }) => {
               </div>
               {/* plus icon */}
               <div
+                onClick={() => increaseAmount(id)}
                 className="flex-1 h-full flex justify-center
               items-center cursor-pointer"
               >
