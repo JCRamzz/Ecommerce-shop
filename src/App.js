@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import pages
 import Home from "./pages/Home";
-import ProductDetauls from "./pages/ProductDetails";
+import ProductDetails from "./pages/ProductDetails";
 // import components
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
@@ -15,7 +15,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product/id" element={<ProductDetauls />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
         <Sidebar />
         <Footer />
