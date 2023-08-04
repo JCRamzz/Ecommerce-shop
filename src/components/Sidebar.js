@@ -32,13 +32,13 @@ const Sidebar = () => {
           return <CartItem item={item} key={item.id} />;
         })}
       </div>
-      <div>
+      <div className="flex flex-col gap-y-3 py-4 mt-4">
         <div
-          className="bg-pink-200 flex w-full justify-between
+          className="flex w-full justify-between
         items-center"
         >
           {/* total */}
-          <div>
+          <div className="uppercase font-semibold">
             <span>Total:</span> $100
           </div>
           {/* clear cart */}
