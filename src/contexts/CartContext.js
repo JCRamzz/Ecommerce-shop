@@ -36,8 +36,15 @@ const CartProvider = ({ children }) => {
     setCart(newCart);
   };
 
+  // clear cart
+  const clearCart = () => {
+    setCart([]); // set state to empty array
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider
+      value={{ cart, addToCart, removeFromCart, clearCart }}
+    >
       {children}
     </CartContext.Provider>
   );
